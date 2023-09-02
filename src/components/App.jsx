@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { FormPhonebook } from './FormPhonebook/FormPhonebook'
-import { nanoid } from 'https://cdn.jsdelivr.net/npm/nanoid/nanoid.js';
+import { nanoid } from 'nanoid';
 import { FilterForm } from './FilterForm/FilterForm';
 import { ContactsList } from './ContactsList/ContactsList'
 import React from 'react';
