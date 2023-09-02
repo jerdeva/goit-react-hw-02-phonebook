@@ -5,9 +5,11 @@ export const ContactsList = ({ filterList, deleteContact }) => {
   return (
     <ul>
       {filterList.map(item => {
-        <li key={item.id}>
-          <ContactInfo contact={item} onDelete={deleteContact} />
-        </li>;
+        return (
+          <li key={item.id}>
+            <ContactInfo contact={item} onDelete={deleteContact} />
+          </li>
+        );
       })}
     </ul>
   );
