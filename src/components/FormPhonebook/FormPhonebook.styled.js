@@ -20,3 +20,14 @@ export const LabelStyle = styled.label`
 export const ErrorMessageStyle = styled(ErrorMessage)`
   color: red;
 `;
+
+ const BtnStyle = styled.button`
+  color: white;
+  background-color: black;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  width: 108px;
+  padding: 4px;
+`;
+
+export default BtnStyle;

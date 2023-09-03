@@ -2,6 +2,7 @@ import { Formik, Field } from 'formik';
 import React from 'react';
 import * as Yup from 'yup';
 import { FormPhB, LabelStyle, ErrorMessageStyle } from './FormPhonebook.styled';
+import BtnStyle from './FormPhonebook.styled';
 
 const SettingForms = Yup.object().shape({
   name: Yup.string()
@@ -48,7 +49,7 @@ export const FormPhonebook = ({ onAdd }) => {
           <Field name="number" type="tell" placeholder="Enter phone number" />
           <ErrorMessageStyle component={'h5'} name="number" />
         </LabelStyle>
-        <button type="submit">Add contact</button>
+        <BtnStyle type="submit">Add contact</BtnStyle>
       </FormPhB>
     </Formik>
   );

@@ -1,11 +1,13 @@
+import Wrapper from './ContactInfo.styled'
+
+
 const ContactInfo = ({ contact: { id, name, number }, onDelete }) => {
   return (
-    <div>
-      <p>
-        {name}:{number}
-      </p>
+    <Wrapper>
+      <p>Name: {name}</p>
+      <p>Number: {number}</p>
       <button onClick={() => onDelete(id)}>Delete</button>
-    </div>
+    </Wrapper>
   );
 };
 

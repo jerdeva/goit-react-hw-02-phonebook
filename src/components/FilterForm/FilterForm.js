@@ -1,10 +1,14 @@
 import React from 'react';
+import Wrapper from './FormList.styled';
+import LabelSt from './FormList.styled';
+
+
 
 export const FilterForm = ({filter, onSearch}) =>
 {
     return (
-      <div>
-        <label htmlFor="filter">
+      <Wrapper>
+        <LabelSt htmlFor="filter">
           Find contacts by name
           <input
             name="filter"
@@ -13,7 +17,7 @@ export const FilterForm = ({filter, onSearch}) =>
             value={filter}
             onChange={evt => onSearch(evt.target.value)}
           />
-        </label>
-      </div>
+        </LabelSt>
+      </Wrapper>
     );
 }
